@@ -27,3 +27,9 @@ add_compile_options(-fsanitize=address -fsanitize=memory -fno-omit-frame-pointer
 link_libraries(-fsanitize=address -fsanitize=memory)
 
 https://blog.csdn.net/qq_37868450/article/details/118766735
+
+```
+clang++ -fsanitize=address -g -O1 -fno-omit-frame-pointer your_program.cpp -o your_program
+export ASAN_OPTIONS=detect_leaks=0:abort_on_error=1:sleep_before_dying=50
+./your_program
+```
