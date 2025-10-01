@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/TEST.dir/test/test.cpp.o -o $(PROJECT_SOURCE_DIR)/bin/TEST  ../static_libs/libhello_library.a 
