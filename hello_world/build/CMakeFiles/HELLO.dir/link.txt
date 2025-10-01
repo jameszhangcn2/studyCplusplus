@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/HELLO.dir/src/main.cpp.o -o $(PROJECT_SOURCE_DIR)/bin/HELLO  ../static_libs/libhello_library.a 

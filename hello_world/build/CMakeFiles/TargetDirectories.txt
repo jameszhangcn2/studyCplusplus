@@ -1,5 +1,0 @@
-/workspaces/studyCplusplus/hello_world/build/CMakeFiles/hello_library.dir
-/workspaces/studyCplusplus/hello_world/build/CMakeFiles/HELLO.dir
-/workspaces/studyCplusplus/hello_world/build/CMakeFiles/TEST.dir
-/workspaces/studyCplusplus/hello_world/build/CMakeFiles/edit_cache.dir
-/workspaces/studyCplusplus/hello_world/build/CMakeFiles/rebuild_cache.dir
