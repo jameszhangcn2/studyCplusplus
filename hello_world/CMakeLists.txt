@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
 project(Hello)
+set (EXECUTABLE_OUTPUT_PATH $(PROJECT_SOURCE_DIR)/bin)
 add_executable(HELLO main.cpp hello_world.cpp)
 add_executable(TEST test.cpp hello_world.cpp)
