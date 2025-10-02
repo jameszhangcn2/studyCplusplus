@@ -48,8 +48,8 @@ add_executable(TEST test/test.cpp)
 
 target_link_libraries( TEST
     GTest::gtest_main
-    PRIVATE
-        ${PROJECT_SOURCE_DIR}/static_libs/libhello_library.a
+    #PRIVATE
+    ${PROJECT_SOURCE_DIR}/static_libs/libhello_library.a
 )
 include(GoogleTest)
-gtest_discover_tests(hello_test)
+gtest_discover_tests(TEST)
