@@ -10,6 +10,19 @@ class GameConfig
         GameConfig& operator = (const GameConfig& tmpobj);
         ~GameConfig() {};
 
+    public:
+        static GameConfig * getInstance()
+        {
+            if(m_instance == nullptr)
+            {
+                m_instance = new GameConfig();
+            }
+            return m_instance;
+        }
+    private:
+        static GameConfig * m_instance;
+    public:
+        int m_test;
 };
 
 #endif
