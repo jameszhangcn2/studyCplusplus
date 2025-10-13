@@ -7,7 +7,7 @@ on:
       branches: [ testCodespaces2 ]
 
 jobs:
-  build-and-test:
+  build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
