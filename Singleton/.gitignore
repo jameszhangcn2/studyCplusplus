@@ -1,0 +1,4 @@
+#thirdparty libs, will be get at each build
+lib/
+#build directory
+build/
