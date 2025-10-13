@@ -19,6 +19,8 @@ class GameConfig
             }
             return m_instance;
         }
+
+        int setTestValue(int value);
     private:
         static GameConfig * m_instance;
     public:
