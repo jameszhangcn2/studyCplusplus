@@ -1,0 +1,16 @@
+name: C/C++ CI
+
+on:
+  push:
+      branches: [ testCodespaces2 ]
+  pull_request:
+      branches: [ testCodespaces2 ]
+
+jobs:
+  build-and-test:
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v2
+      - name: install cppunit
+      run: ./Singleton/build.sh
+      - name: build
