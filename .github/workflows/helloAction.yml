@@ -8,11 +8,11 @@ on:
 
 jobs:
   build:
-    name: build
+    name: BUILD
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: BUILD
+    - name: build
     run: ./Singleton/build.sh
     
     
