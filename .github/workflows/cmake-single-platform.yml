@@ -21,12 +21,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Change directory
+    - name: Build
       # Build your program with the given configuration
       run: cd ${{github.workspace}}/Singleton/
+    - name: PWD
+      # Build your program with the given configuration
       run: pwd
     - name: Build
       # Build your program with the given configuration
-      run: pwd
       run: ./build.sh
 
