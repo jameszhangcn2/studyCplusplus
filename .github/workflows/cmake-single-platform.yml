@@ -24,7 +24,9 @@ jobs:
     - name: Change directory
       # Build your program with the given configuration
       run: cd ${{github.workspace}}/Singleton/
+      run: pwd
     - name: Build
       # Build your program with the given configuration
+      run: pwd
       run: ./build.sh
 
