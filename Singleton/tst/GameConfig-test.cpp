@@ -8,6 +8,8 @@ TEST(gameConfigTest, test1)
     GameConfig::getInstance()->setTestValue(5);
 
     EXPECT_EQ(GameConfig::getInstance()->m_test,5);
+
+    GameConfig::getInstance()->setTestValue(0);
 }
 
 TEST(gameConfigTest, test2)
