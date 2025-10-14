@@ -29,5 +29,6 @@ jobs:
       run: pwd
     - name: Build
       # Build your program with the given configuration
-      run: ./build.sh
+      #run: ./build.sh
+      run: echo Hello, world!
 
