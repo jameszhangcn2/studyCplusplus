@@ -31,4 +31,6 @@ jobs:
       # Build your program with the given configuration
       #run: ./build.sh
       run: echo Hello, world!
+    - run: cd ${{github.workspace}}/Singleton/
+    - run: ls -lrt
 
