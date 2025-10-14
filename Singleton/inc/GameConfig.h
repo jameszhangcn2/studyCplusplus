@@ -25,6 +25,7 @@ class GameConfig
         static GameConfig * m_instance;
     public:
         int m_test;
+        unsigned char m_char;
 };
 
 #endif
