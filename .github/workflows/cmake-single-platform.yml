@@ -7,6 +7,8 @@ on:
     branches: [ "testCodespaces2" ]
   pull_request:
     branches: [ "testCodespaces2" ]
+  schedule:
+    - cron: "0 0 * * *" #runs daily at midnight
 
 env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
