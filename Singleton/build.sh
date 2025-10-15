@@ -6,5 +6,5 @@ unzip ./lib/googletest-1.17.0.zip -d ./lib
 
 cd build
 ls -lrt
-cmake .. -DCMAKE_BUILD_TYPE=Debug
+cmake .. -DCMAKE_BUILD_TYPE=Debug -DENABLE_COVERAGE=ON
 make
