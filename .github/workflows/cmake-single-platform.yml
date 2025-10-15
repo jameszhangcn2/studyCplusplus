@@ -23,18 +23,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Build
-      # Build your program with the given configuration
-      run: cd ${{github.workspace}}/Singleton/
+    - name: HELLO
+      run: echo Hello, world!
+
     - name: PWD
       # Build your program with the given configuration
       run: pwd
-    - name: Build
-      # Build your program with the given configuration
-      #run: ./build.sh
-      run: echo Hello, world!
-    - run: cd ${{github.workspace}}/Singleton/
-    - run: ls -lrt
+
     - run: ./build.sh
     - run: ls -lrt
 
