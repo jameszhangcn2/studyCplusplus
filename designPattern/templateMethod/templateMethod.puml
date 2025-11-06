@@ -1,0 +1,27 @@
+@startuml templateMethod
+package templateMethod #red {
+    class Fighter #green{
+        # m_life
+        # m_magic
+        # m_attack
+
+        + JN_Burn()
+        - effect_enemy() #00FF00
+        - effect_self() #0000FF
+        - play_effect()
+        - canUseJN() bool
+    }
+    class F_Warrior #green{
+        - effect_enemy()
+        - effect_self()
+    }
+    class F_Mage #green{
+        - effect_enemy()
+        - effect_self()
+    }
+}
+
+Fighter <|.down. F_Warrior
+Fighter <|.down. F_Mage
+
+@enduml
