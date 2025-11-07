@@ -1,0 +1,34 @@
+@startuml simpleFactory
+package simpleFactory #red {
+    class Monster #green{
+        # m_life
+        # m_magic
+        # m_attack
+
+        + Monster()
+        + ~Monster()
+    }
+    class M_Undead #green{
+        + M_Undead()
+    }
+    class M_Element #green{
+        + M_Element()
+    }
+    class M_Mechanic #green{
+        + M_Mechanic()
+    }
+    class MonsterFactory
+    {
+        {static} +createMonster();
+    }
+}
+
+Monster <|-down- M_Undead
+Monster <|-down- M_Element
+Monster <|-down- M_Mechanic
+
+MonsterFactory ..> M_Undead
+MonsterFactory ..> M_Element
+MonsterFactory ..> M_Mechanic
+
+@enduml
