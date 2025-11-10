@@ -1,0 +1,105 @@
+@startuml simpleFactory
+package abstractFactory #yellow {
+    class Body #green{
+        + getName()
+    }
+    class China_Body #green{
+        + getName()
+    }
+    class Japan_Body #green{
+        + getName()
+    }
+    class America_Body #green{
+        + getName()
+    }
+
+    class Clothes #green{
+        + getName()
+    }
+    class China_Clothes #green{
+        + getName()
+    }
+    class Japan_Clothes #green{
+        + getName()
+    }
+    class America_Clothes #green{
+        + getName()
+    }
+
+    class Shoes #green{
+        + getName()
+    }
+    class China_Shoes #green{
+        + getName()
+    }
+    class Japan_Shoes #green{
+        + getName()
+    }
+    class America_Shoes #green{
+        + getName()
+    }
+    class AbstractFactory #blue
+    {
+        +createBody();
+        +createClothes();
+        +createShoes();
+    }
+    class ChinaFactory #blue
+    {
+        +createBody();
+        +createClothes();
+        +createShoes();
+    }
+    class JapanFactory #blue
+    {
+        +createBody();
+        +createClothes();
+        +createShoes();
+    }
+    class AmericaFactory #blue
+    {
+        +createBody();
+        +createClothes();
+        +createShoes();
+    }
+}
+
+Body <|-down- China_Body
+Body <|-down- Japan_Body
+Body <|-down- America_Body
+
+Clothes <|-down- China_Clothes
+Clothes <|-down- Japan_Clothes
+Clothes <|-down- America_Clothes
+
+Shoes <|-down- China_Shoes
+Shoes <|-down- Japan_Shoes
+Shoes <|-down- America_Shoes
+
+AbstractFactory <|-up- ChinaFactory
+AbstractFactory <|-up- JapanFactory
+AbstractFactory <|-up- AmericaFactory
+
+ChinaFactory .up.> China_Body
+note on link: create
+ChinaFactory .up.> China_Clothes
+note on link: create
+ChinaFactory .up.> China_Shoes
+note on link: create
+
+
+JapanFactory .up.> Japan_Body
+note on link: create
+JapanFactory .up.> Japan_Clothes
+note on link: create
+JapanFactory .up.> Japan_Shoes
+note on link: create
+
+AmericaFactory .up.> America_Body
+note on link: create
+AmericaFactory .up.> America_Clothes
+note on link: create
+AmericaFactory .up.> America_Shoes
+note on link: create
+
+@enduml
