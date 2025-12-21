@@ -1,0 +1,39 @@
+@startuml templateMethod
+package protoType #red {
+    class Monster #green{
+        # m_life
+        # m_magic
+        # m_attack
+
+        + Monster()
+        + ~Monster()
+        + clone()
+    }
+    class M_Undead #green{
+        + M_Undead()
+        + clone()
+    }
+    class M_Element #green{
+        + M_Element()
+        + clone()
+    }
+    class M_Mechanic #green{
+        + M_Mechanic()
+        + clone() 
+
+    }
+}
+note left of M_Undead::clone
+return clone of itself
+end note
+note left of M_Element::clone
+return clone of itself
+end note
+note left of M_Mechanic::clone
+return clone of itself
+end note
+Monster <|.down. M_Undead
+Monster <|.down. M_Element
+Monster <|.down. M_Mechanic
+
+@enduml
